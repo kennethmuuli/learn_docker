@@ -1,0 +1,10 @@
+# Versioon peab alati olemas olema
+version: '3.1'
+services:
+  app:
+    image: php:8.3-apache
+    ports:
+    # host port : container port
+      - 8000:80
+    volumes:
+      - ./html:/var/www/html
